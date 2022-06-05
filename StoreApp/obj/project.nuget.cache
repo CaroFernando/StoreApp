@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "lEygiVcM/JTF/9QAHAeAgYCKPiQOSDHWVe8x9yQbuEA9z92SFUcRAQtCf73BQFAGEDZcWpqns0kxya2UxEikig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luisf\\Documents\\Prog\\c#\\StoreApp\\StoreApp\\StoreApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luisf\\.nuget\\packages\\barcode\\2022.5.5918\\barcode.2022.5.5918.nupkg.sha512",
+    "C:\\Users\\luisf\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\luisf\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\luisf\\.nuget\\packages\\newtonsoft.json\\13.0.2-beta1\\newtonsoft.json.13.0.2-beta1.nupkg.sha512",
+    "C:\\Users\\luisf\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512",
+    "C:\\Users\\luisf\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
+  ],
+  "logs": []
+}
