@@ -22,6 +22,22 @@ namespace StoreApp.Core
             deliveries = new List<DeliveryMethod>();
         }
 
+        public void resetCalculatedValues()
+        {
+            productsTotalItems.Clear();
+            deliveryCapacity.Clear();
+        }
+
+        public Dictionary<int, double> getProductsTotalItems()
+        {
+            return productsTotalItems;
+        }
+
+        public Dictionary<int, double> getDeliveryCapacity()
+        {
+            return deliveryCapacity;
+        }
+
         public void addStore(Store store)
         {
             stores.Add(store);
@@ -44,6 +60,8 @@ namespace StoreApp.Core
 
         public void Deliver(Store s)
         {
+            this.message = "Order completed for store: " + s.Name + " Id: " + s.Id;
+            this.Notify();
             removeStore(s.Id);
         }
 
@@ -58,14 +76,6 @@ namespace StoreApp.Core
                 return true;
             }
             return false;
-        }
-
-        public void printStores()
-        {
-            foreach (Store s in stores)
-            {
-                Console.WriteLine(s.ToString());
-            }
         }
 
         public void resetDeliveries()

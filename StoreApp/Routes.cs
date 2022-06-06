@@ -59,7 +59,12 @@ namespace StoreApp
         {
             if (RouteManager.route.ValidateRoute())
             {
-                MessageBox.Show("Route is valid");
+                string leftovermessage = "";
+                foreach(var item in RouteManager.route.getDeliveryCapacity())
+                {
+                    leftovermessage += "ProductId: " + item.Key + " quantity: " + item.Value + " \n";
+                }
+                MessageBox.Show("Route is valid with lefovers \n" + leftovermessage);
             }
             else
             {
@@ -99,6 +104,7 @@ namespace StoreApp
             }
             this.Enabled = true;
             RouteManager.route.resetDeliveries();
+            RouteManager.route.resetCalculatedValues();
             breadTruckCount = 0;
             vegetablesTruckCount = 0;
             sodaTruckCount = 0;
@@ -108,6 +114,7 @@ namespace StoreApp
         private void ResetBtn_Click(object sender, EventArgs e)
         {
             RouteManager.route.resetDeliveries();
+            RouteManager.route.resetCalculatedValues();
             breadTruckCount = 0;
             vegetablesTruckCount = 0;
             sodaTruckCount = 0;

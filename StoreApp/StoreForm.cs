@@ -16,6 +16,7 @@ namespace StoreApp
         {
             InitializeComponent();
             UpdateTable();
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         public void UpdateTable()

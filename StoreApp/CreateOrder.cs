@@ -21,6 +21,7 @@ namespace StoreApp
             InitializeComponent();
             if (s.currentOrder != null) o = s.currentOrder;
             else o = new Core.Order(RouteManager.getNextOrderId(), s.Id);
+            OrderTable.AllowUserToAddRows = false;
             UpdateTable();
         }
 

@@ -40,5 +40,7 @@ namespace StoreApp
         public static bool addDelivery(Core.DeliveryMethod d){
             return route.addDelivery(d);
         }
+
+        
     }
 }

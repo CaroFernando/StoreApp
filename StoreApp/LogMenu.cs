@@ -26,6 +26,7 @@ namespace StoreApp
         {
             InitializeComponent();
             Logs = new List<LogEntry>();
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         public static LogMenu Instance
